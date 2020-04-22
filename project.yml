@@ -1,0 +1,147 @@
+name: ePA-FdV-ModulKit
+options:
+  bundleIdPrefix: de.gematik.ti.epa.fdv
+  deploymentTarget:
+    macOS: 10.14
+    iOS: 13.0
+  minimumXcodeGenVersion: 2.3.0
+settings:
+  base:
+    CODE_SIGN_IDENTITY: ""
+    SWIFT_VERSION: 5.0
+    ALWAYS_SEARCH_USER_PATHS: NO
+    FRAMEWORK_SEARCH_PATHS: "$(inherited)"
+    HEADER_SEARCH_PATHS: ["$(inherited)", "${SDK_DIR}/usr/include/libxml2"]
+  configs:
+    Release:
+      SWIFT_COMPILATION_MODE: wholemodule
+    Debug:
+      SWIFT_COMPILATION_MODE: incremental
+targets:
+  KissXML:
+    type: framework
+    platform: [macOS,iOS]
+    settings:
+      HEADER_SEARCH_PATHS: "$(inherited) /usr/include/libxml2"
+    info:
+      path: Resources/KissXML_Info.plist
+    sources:
+      - KissXML
+    dependencies:
+      - sdk: libxml2.tbd
+  ePA_FdV_Authn:
+    type: framework
+    platform: [macOS,iOS]
+    settings:
+      SWIFT_OBJC_BRIDGING_HEADER: "${SRCROOT}/Sources/Bridge.h"
+    info:
+      path: Resources/Authentication_Info.plist
+    sources:
+      - Sources/Authentication
+      - path: generated/authn/src
+        createIntermediateGroups: true
+    dependencies:
+      - target: KissXML_${platform}
+        embed: true
+      - sdk: libxml2.tbd
+      - carthage: DataKit
+        embed: true
+      - carthage: CardReaderProviderApi
+      - carthage: CardReaderAccess
+      - carthage: GemCommonsKit
+      - carthage: ASN1Kit
+      - carthage: HealthCardAccess
+        embed: true
+    scheme:
+      testTargets:
+        - ePA_FdV_AuthnTests_${platform}
+  ePA_FdV_HealthCardAuthn:
+    type: framework
+    platform: [macOS,iOS]
+    settings:
+    info:
+      path: Resources/HealthCardAuthn_Info.plist
+    sources:
+      - Sources/HealthCardAuthn
+    dependencies:
+      - target: ePA_FdV_Authn_${platform}
+        embed: true
+      - carthage: DataKit
+        embed: true
+      - carthage: HealthCardControl
+    scheme:
+      testTargets:
+        - ePA_FdV_HealthCardAuthnTests_${platform}
+  ePA_FdV_ServiceLocalization:
+    type: framework
+    platform: [macOS,iOS]
+    info:
+      path: Resources/ServiceLocalization_Info.plist
+    sources:
+      - Sources/ServiceLocalization
+    dependencies:
+      - carthage: GemCommonsKit
+    scheme:
+      testTargets:
+        - ePA_FdV_ServiceLocalizationTests_${platform}
+  ePA_FdV_AuthnTests:
+    type: bundle.unit-test
+    platform: [macOS,iOS]
+    info:
+      path: Resources/ePA_FdV_AuthnTests_Info.plist
+    sources:
+      - Tests/Authentication
+      - Tests/Common
+    dependencies:
+      - target: ePA_FdV_Authn_${platform}
+      - carthage: OHHTTPStubs
+      - carthage: Nimble
+    scheme:
+      gatherCoverageData: true
+  ePA_FdV_HealthCardAuthnTests:
+    type: bundle.unit-test
+    platform: [macOS,iOS]
+    info:
+      path: Resources/ePA_FdV_HealthCardAuthnTests_Info.plist
+    sources:
+      - Tests/HealthCardAuthn
+      - Tests/Common
+    dependencies:
+      - target: ePA_FdV_HealthCardAuthn_${platform}
+      - target: ePA_FdV_Authn_${platform}
+      - target: KissXML_${platform}
+      - carthage: Nimble
+      - carthage: HealthCardControl
+      - carthage: BigInt
+    scheme:
+      gatherCoverageData: true
+  ePA_FdV_ServiceLocalizationTests:
+    type: bundle.unit-test
+    platform: [macOS,iOS]
+    info:
+      path: Resources/ePA_FdV_ServiceLocalizationTests_Info.plist
+    sources:
+      - path: Tests/ServiceLocalization
+        createIntermediateGroups: true
+    dependencies:
+      - target: ePA_FdV_ServiceLocalization_${platform}
+      - carthage: Nimble
+      - carthage: GemCommonsKit
+    scheme:
+      gatherCoverageData: true
+  Documentation:
+    type: framework
+    platform: macOS
+    info:
+      path: Resources/Documentation_Info.plist
+    settings:
+      # PRODUCT_NAME becomes the Documentation/Module title
+      PRODUCT_NAME: "ePA_FdV_ModulKit"
+      SWIFT_OBJC_BRIDGING_HEADER: ${SRCROOT}/Sources/Bridge.h
+    sources:
+      - path: Sources
+    scheme:
+    dependencies:
+      - target: ePA_FdV_Authn_macOS
+      - sdk: libxml2.tbd
+buildImplicitDependencies: true

@@ -1,0 +1,23 @@
+include::config.adoc[]
+
+[#HealthCardAutn]
+=== HealthCardAuthentication
+
+One way to authenticate the individual user for the use of the electronic personal health record
+(ePA, elektronische Patientenakte) is using a German Health Card (eGK).
+
+HealthCardAuthn is a class implementing the `Authenticator` protocol
+to perform an authentication for the the ePA service.
+It has to be instantiated with a `HealthCardType`
+(see: https://github.com/gematik/ref-HealthCardAccessKit[HealthCardAccessKit @ *GitHub*])
+which usually would be provided by a `CardReaderType`
+(see: https://github.com/gematik/ref-CardReaderProvider-ApiKit[CardReaderProvider-ApiKit @ *GitHub*]).
+
+Consider also the working example of an NFC-Demo App, which employs above mentioned frameworks
+to communicate with real work (NFC-ready) German Health Cards via the NFC interface provided by Apple:
+https://github.com/gematik/ref-OpenHealthCardApp-iOS[OpenHealthCardApp @ *GitHub*])
+
+[source,swift]
+----
+include::{integrationitestdir}/HealthCardAuthn/HealthCardAuthnEgk21IntegrationTest.swift[tag=HealthCardAuthentication, indent=0]]
+----

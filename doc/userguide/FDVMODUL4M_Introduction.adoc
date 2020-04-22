@@ -1,0 +1,10 @@
+include::config.adoc[]
+
+== Introduction
+
+The ePA-FdV-ModulKit (Frontend des Versicherten für die elektronische Patientenakte) is intended for reference purposes
+when implementing a system that performs the communication between an Aktor (ePA-Aktensystemsimulator)
+and an individual authorization instance, e.g. a German Health Card (elektronische Gesundheitskarte).
+
+This document describes the functionalitiy and structure of the ePA-FdV-ModulKit (Frontend des Versicherten
+für die elektronische Patientenakte).

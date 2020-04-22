@@ -1,0 +1,17 @@
+include::config.adoc[]
+
+[#ServiceLocalization]
+=== ServiceLocalization
+
+The submodule contains the protocol `ServiceLocatorType` as an entry point to localize ePA service components.,
+which - after successful lookup - returns an endpointURL for a given interface name.
+
+The protocol `ServiceLocatorType` is implemented by `ServiceLocator`.
+It performs a DNS lookup for retrieving endpoint URLs of various ePA gateway services.
+Once the lookup has completed successfully, the  endpoint URLs for the different ePA services can be retrieved.
+
+[source,swift]
+----
+let fqdn = "valid.fqdn.service.url"
+include::{integrationitestdir}/ServiceLocalization/ServiceLocatorIntegrationTest.swift[tag=ServiceLocator, indent=0]
+----

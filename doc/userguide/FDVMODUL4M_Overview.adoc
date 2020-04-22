@@ -1,0 +1,9 @@
+include::config.adoc[]
+
+== Overview
+
+The ePA-FdV-module-kit bundles submodules that provide the functionality
+(service localization, authentication, authentication via health card, key management)
+necessary for the access to  the electronic patient record.
+As for now the key management submodule remains unimplemented.
+As a reference for each submodule see also the `IntegrationTests`.

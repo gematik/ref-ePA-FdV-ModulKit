@@ -1,0 +1,5 @@
+<ds:Signature Id="${template_SignatureId}" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    ${template_dsSignedInfo}
+    <ds:SignatureValue>${template_SignatureValue}</ds:SignatureValue>
+    ${template_dsKeyInfo}
+</ds:Signature>

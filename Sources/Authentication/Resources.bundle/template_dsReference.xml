@@ -1,0 +1,7 @@
+<ds:Reference URI="${template_referenceURI}">
+    <ds:Transforms>
+        ${template_dsTransform}
+    </ds:Transforms>
+    <ds:DigestMethod Algorithm="${template_digestMethodAlgorithm}"></ds:DigestMethod>
+    <ds:DigestValue>${template_digestValue}</ds:DigestValue>
+</ds:Reference>

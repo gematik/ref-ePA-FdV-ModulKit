@@ -1,0 +1,12 @@
+output: docs
+author: gematik GmbH
+author_url: http://www.gematik.de
+exclude: /*/internal*
+module: ePA_FdV_ModulKit
+github_url: https://github.com/gematik/ref-ePA-FdV-ModulKit.git
+theme: jony
+xcodebuild_arguments:
+  - "-project"
+  - 'ePA-FdV-ModulKit.xcodeproj'
+  - "-scheme"
+  - "Documentation"

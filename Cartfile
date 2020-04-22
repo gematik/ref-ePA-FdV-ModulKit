@@ -1,0 +1,2 @@
+# Carthage project dependencies
+github "gematik/ref-OpenHealthCardKit" ~> 1.0

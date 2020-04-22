@@ -1,0 +1,1 @@
+<wsse:BinarySecurityToken EncodingType="${template_EncodingType}" ValueType="${template_ValueType}" wsu:Id="${template_wsuId}">${template_certificateBase64}</wsse:BinarySecurityToken>

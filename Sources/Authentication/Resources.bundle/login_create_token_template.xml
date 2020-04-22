@@ -1,0 +1,22 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <soap:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" soap:mustUnderstand="true">
+            <!-- BinarySecurityToken and Signature are added by preprocessor step -->
+        ${SecurityHeader}
+        </wsse:Security>
+        <Action xmlns="http://www.w3.org/2005/08/addressing">http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/ChallengeFinal</Action>
+        <MessageID xmlns="http://www.w3.org/2005/08/addressing">urn:uuid:${__UUID()}</MessageID>
+        <To xmlns="http://www.w3.org/2005/08/addressing">${__P(authenticationInsurantProtocol)}://${__P(authenticationInsurantHostname)}:${__P(authenticationInsurantPort)}${__P(authenticationInsurantPath)}</To>
+        <ReplyTo xmlns="http://www.w3.org/2005/08/addressing">
+            <Address>http://www.w3.org/2005/08/addressing/anonymous</Address>
+        </ReplyTo>
+    </soap:Header>
+    ${SoapBody}
+<!--    <soap:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="${wsuId}">-->
+<!--        <RequestSecurityTokenResponse xmlns="http://docs.oasis-open.org/ws-sx/ws-trust/200512">-->
+<!--            <SignChallengeResponse>-->
+<!--                <Challenge>${challenge}</Challenge>-->
+<!--            </SignChallengeResponse>-->
+<!--        </RequestSecurityTokenResponse>-->
+<!--    </soap:Body>-->
+</soap:Envelope>

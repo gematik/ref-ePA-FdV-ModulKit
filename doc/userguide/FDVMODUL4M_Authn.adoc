@@ -1,0 +1,25 @@
+include::config.adoc[]
+
+[#Authentication]
+=== FdV Authentication
+
+The authentication submodule provides the functionality for authenticating the user to use the electronic patient
+record.
+
+Instantiate a `Authn` object with the URL of an Aktor authentication service you obtained
+        by the <<FDVMODUL4M_ServiceLoacalization.adoc#ServiceLocalization, ServiceLocalization>>.
+
+Instantiate a class conforming to the `Authenticator` protocol that serves  as an agent to authenticate the individual
+user. This can be carried out by a German Health Card, see the submodule
+<<FDVMODUL4M_HealthCardAuthn.adoc#HealthCardAutn, HealthCardAuthnentication>> for reference.
+
+The `Authn` object then performs the required authentication operations
+(login create challenge / login create token / renew token / logout) according to ws-Trust to authenticate the user.
+
+The `EPA_FdV_AUTHN_I_Authentication_Insurant_Binding_Soap12` class forms the entry point for establishing the
+connection to the authentication web service.
+
+[source,swift]
+----
+include::{integrationitestdir}/Authentication/FdvEPAAuthnEgkIntegrationTest.swift[tag=Authentication, indent=0]
+----
