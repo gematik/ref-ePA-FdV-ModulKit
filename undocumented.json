@@ -1,0 +1,411 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/KissXML/DDXMLDocument.h",
+      "line": 8,
+      "symbol": "DDXMLDocument",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Authn+Error.swift",
+      "line": 8,
+      "symbol": "Authn.Error",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Authn+Error.swift",
+      "line": 9,
+      "symbol": "Authn.Error.unknown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Authn+Error.swift",
+      "line": 10,
+      "symbol": "Authn.Error.responseError(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Authn+Error.swift",
+      "line": 11,
+      "symbol": "Authn.Error.missingAuthenticator",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Authn+Error.swift",
+      "line": 16,
+      "symbol": "Authn.SOAPError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Authn+Error.swift",
+      "line": 17,
+      "symbol": "Authn.SOAPError.missingSaml2Assertion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Authn+Error.swift",
+      "line": 18,
+      "symbol": "Authn.SOAPError.missingSoapBody",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Authn+Error.swift",
+      "line": 19,
+      "symbol": "Authn.SOAPError.missingSoapHeader",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Authn+Error.swift",
+      "line": 20,
+      "symbol": "Authn.SOAPError.xmlHandlingError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Authn+Error.swift",
+      "line": 21,
+      "symbol": "Authn.SOAPError.xPathError(error:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Authn+Error.swift",
+      "line": 22,
+      "symbol": "Authn.SOAPError.malformedSoapBody",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 7,
+      "symbol": "Namespaces",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 8,
+      "symbol": "Namespaces.wsu",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 9,
+      "symbol": "Namespaces.wsse",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 10,
+      "symbol": "Namespaces.ds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 11,
+      "symbol": "Namespaces.trust",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 12,
+      "symbol": "Namespaces.saml2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 13,
+      "symbol": "Namespaces.xml",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 14,
+      "symbol": "Namespaces.xsi",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 15,
+      "symbol": "Namespaces.xsd",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 16,
+      "symbol": "Namespaces.enc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 17,
+      "symbol": "Namespaces.saml2TokenProfile",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 18,
+      "symbol": "Namespaces.createToken",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 19,
+      "symbol": "Namespaces.renewToken",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 20,
+      "symbol": "Namespaces.cancelToken",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 23,
+      "symbol": "SoapTypes",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 24,
+      "symbol": "SoapTypes.base64Encoding",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 26,
+      "symbol": "SoapTypes.x509TokenProfile",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/Soap/Namespaces.swift",
+      "line": 27,
+      "symbol": "SoapTypes.binarySecurityTokenProfile",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/Authentication/xml/DDXMLDocument+C14N.swift",
+      "line": 134,
+      "symbol": "Bool.toInt32()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/HealthCardAuthn/HealthCardAuthn.swift",
+      "line": 27,
+      "symbol": "HealthCardAuthn.Error",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/HealthCardAuthn/HealthCardAuthn.swift",
+      "line": 28,
+      "symbol": "HealthCardAuthn.Error.unknownSigningAlgorithm(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 8,
+      "symbol": "GatewayModuleName",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 9,
+      "symbol": "GatewayModuleName.hcid",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 10,
+      "symbol": "GatewayModuleName.authn",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 11,
+      "symbol": "GatewayModuleName.authz",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 12,
+      "symbol": "GatewayModuleName.docv",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 13,
+      "symbol": "GatewayModuleName.ocspf",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 14,
+      "symbol": "GatewayModuleName.avzd",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 15,
+      "symbol": "GatewayModuleName.sgd1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 16,
+      "symbol": "GatewayModuleName.sgd2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 30,
+      "symbol": "ServiceInterfaceName.gateway",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 45,
+      "symbol": "ServiceInterfaceName.interfaceName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 63,
+      "symbol": "ServiceLocator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocator.swift",
+      "line": 71,
+      "symbol": "ServiceLocator.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocatorType.swift",
+      "line": 11,
+      "symbol": "ServiceInterfaceName.IAuthenticationInsurant",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocatorType.swift",
+      "line": 12,
+      "symbol": "ServiceInterfaceName.IAuthorizationInsurant",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocatorType.swift",
+      "line": 13,
+      "symbol": "ServiceInterfaceName.IAuthorizationManagementInsurant",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocatorType.swift",
+      "line": 14,
+      "symbol": "ServiceInterfaceName.IAccountManagementInsurant",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocatorType.swift",
+      "line": 15,
+      "symbol": "ServiceInterfaceName.IDocumentManagementConnect",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocatorType.swift",
+      "line": 16,
+      "symbol": "ServiceInterfaceName.IDocumentManagementInsurant",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocatorType.swift",
+      "line": 17,
+      "symbol": "ServiceInterfaceName.IOCSPStatusInformation",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocatorType.swift",
+      "line": 18,
+      "symbol": "ServiceInterfaceName.IProxyDirectoryQuery",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocatorType.swift",
+      "line": 19,
+      "symbol": "ServiceInterfaceName.IGetKeySgd1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocatorType.swift",
+      "line": 20,
+      "symbol": "ServiceInterfaceName.IGetKeySgd2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocatorType.swift",
+      "line": 32,
+      "symbol": "URLScheme.http",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI/Sources/ServiceLocalization/ServiceLocatorType.swift",
+      "line": 33,
+      "symbol": "URLScheme.https",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/tst_tt_build/Jenkins/workspace/FdV-ModulKit-REF-EPA-LIB-CI"
+}
