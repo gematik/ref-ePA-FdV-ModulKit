@@ -7,11 +7,11 @@ The authentication submodule provides the functionality for authenticating the u
 record.
 
 Instantiate a `Authn` object with the URL of an Aktor authentication service you obtained
-        by the <<FDVMODUL4M_ServiceLoacalization.adoc#ServiceLocalization, ServiceLocalization>>.
+        by the `ServiceLocalization`.
 
 Instantiate a class conforming to the `Authenticator` protocol that serves  as an agent to authenticate the individual
 user. This can be carried out by a German Health Card, see the submodule
-<<FDVMODUL4M_HealthCardAuthn.adoc#HealthCardAutn, HealthCardAuthnentication>> for reference.
+`HealthCardAuthentication`>>` for reference.
 
 The `Authn` object then performs the required authentication operations
 (login create challenge / login create token / renew token / logout) according to ws-Trust to authenticate the user.

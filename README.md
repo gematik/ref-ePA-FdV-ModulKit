@@ -60,11 +60,11 @@ The authentication submodule provides the functionality for authenticating the u
 record.
 
 Instantiate a `Authn` object with the URL of an Aktor authentication service you obtained
-by the [ServiceLocalization](FDVMODUL4M_ServiceLoacalization.xml#ServiceLocalization).
+by the `ServiceLocalization`.
 
 Instantiate a class conforming to the `Authenticator` protocol that serves as an agent to authenticate the individual
 user. This can be carried out by a German Health Card, see the submodule
-[HealthCardAuthnentication](FDVMODUL4M_HealthCardAuthn.xml#HealthCardAutn) for reference.
+`HealthCardAuthentication`&gt;&gt;\` for reference.
 
 The `Authn` object then performs the required authentication operations
 (login create challenge / login create token / renew token / logout) according to ws-Trust to authenticate the user.
@@ -87,10 +87,8 @@ One way to authenticate the individual user for the use of the electronic person
 
 HealthCardAuthn is a class implementing the `Authenticator` protocol
 to perform an authentication for the the ePA service.
-It has to be instantiated with a `HealthCardType`
-(see: [HealthCardAccessKit @ **GitHub**](https://github.com/gematik/ref-HealthCardAccessKit))
-which usually would be provided by a `CardReaderType`
-(see: [CardReaderProvider-ApiKit @ **GitHub**](https://github.com/gematik/ref-CardReaderProvider-ApiKit)).
+It has to be instantiated with a `HealthCardType` which usually would be provided by a `CardReaderType`
+(see: [OpenHealthCardKit @ **GitHub**](https://github.com/gematik/ref-OpenHealthCardKit/)).
 
 Consider also the working example of an NFC-Demo App, which employs above mentioned frameworks
 to communicate with real work (NFC-ready) German Health Cards via the NFC interface provided by Apple:
